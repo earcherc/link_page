@@ -1,0 +1,11 @@
+---
+const { href, text, icon } = Astro.props;
+---
+
+<a
+	href={href}
+	class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700"
+>
+	{icon && <img src={icon} alt="" class="mr-2 -mt-1 w-4 h-4" />}
+	{text}
+</a>
